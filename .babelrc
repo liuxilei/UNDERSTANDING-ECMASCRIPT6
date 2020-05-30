@@ -1,0 +1,24 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "chrome": "67"
+                },
+                "useBuiltIns": "usage"
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "dynamic-import-webpack"
+        ],
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ]
+    ]
+}
