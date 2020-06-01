@@ -1,5 +1,7 @@
-async function test () {
-    return 1;
-}
+let RegExp = "Hello!";
+console.log(RegExp); 
+console.log(window.RegExp === RegExp); //false
 
-console.log(test());
+const ncz = "Hi!";
+console.log(ncz);
+console.log("ncz" in window); //false
