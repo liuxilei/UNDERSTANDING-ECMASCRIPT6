@@ -1,7 +1,16 @@
-let RegExp = "Hello!";
-console.log(RegExp); 
-console.log(window.RegExp === RegExp); //false
+function mixArgs(first, second) {
+    "use strict"
 
-const ncz = "Hi!";
-console.log(ncz);
-console.log("ncz" in window); //false
+    console.log(first === arguments[0]);
+    console.log(second === arguments[1]);
+    first = "c";
+    second = "d";
+    console.log(first === arguments[0]);
+    console.log(second === arguments[1]);
+}
+
+mixArgs("a", "b");
+//true
+//true
+//false
+//false
