@@ -1,16 +1,12 @@
-function mixArgs(first, second) {
-    "use strict"
-
-    console.log(first === arguments[0]);
-    console.log(second === arguments[1]);
-    first = "c";
-    second = "d";
-    console.log(first === arguments[0]);
-    console.log(second === arguments[1]);
+function checkArgs(...args) {
+    console.log(args.length);
+    console.log(arguments.length);
+    console.log(args[0], arguments[0]);
+    console.log(args[1], arguments[1]);
 }
 
-mixArgs("a", "b");
-//true
-//true
-//false
-//false
+checkArgs("a", "b");
+//2
+//2
+//a a
+//b b
