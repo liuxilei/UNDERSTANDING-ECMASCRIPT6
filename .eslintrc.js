@@ -18,6 +18,6 @@ module.exports = {
         "no-prototype-builtins": 1,
         "no-extra-semi": 1,
         "no-extra-boolean-cast": 1,
-        "require-yield": 1
+        "require-yield": 1,
     }
 };
