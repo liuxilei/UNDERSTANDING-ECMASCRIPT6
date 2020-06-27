@@ -19,5 +19,7 @@ module.exports = {
         "no-extra-semi": 1,
         "no-extra-boolean-cast": 1,
         "require-yield": 1,
+        "no-compare-neg-zero": 1,
+        "use-isnan": 1,
     }
 };

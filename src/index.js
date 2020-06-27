@@ -1,8 +1,17 @@
-function factorial(n, p = 1) {
-    if (n <= 1) {
-        return 1 * p;
-    } else {
-        let result = n * p;
-        return factorial(n - 1, result);
+let person = {
+    getGreeting() {
+        return "Hello";
     }
-}
+};
+
+//以person对象为原型
+let friend = {
+    getGreeting() {
+        return super.getGreeting.call(this) + ", hi!";
+    }
+};
+Object.setPrototypeOf(friend, person);
+
+
+console.log(person.getGreeting()); //Hello
+console.log(friend.getGreeting()); //Hello,hi!  
