@@ -1,17 +1,14 @@
-let person = {
-    getGreeting() {
-        return "Hello";
-    }
-};
+function setCookie(
+    name,
+    value,
+    {
+        secure = true,
+        path = '/',
+        domain = 'example.com',
+        expires = new Date(Date.now() + 36000000),
+    },
+) {
+    console.log(secure, path, domain, expires);
+}
 
-//以person对象为原型
-let friend = {
-    getGreeting() {
-        return super.getGreeting.call(this) + ", hi!";
-    }
-};
-Object.setPrototypeOf(friend, person);
-
-
-console.log(person.getGreeting()); //Hello
-console.log(friend.getGreeting()); //Hello,hi!  
+setCookie('type', 'js', {}); //true "/" "example.com" Tue Jun 30 2020 17:34:50 GMT+0800 (中国标准时间)
