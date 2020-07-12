@@ -1,5 +1,15 @@
-Array.prototype[Symbol.toStringTag] = 'Magic';
+let Person = (function () {
+    let privateData = new WeakMap();
 
-var values = [];
+    function Person(name) {
+        privateData.set(this, {
+            name: name,
+        });
+    }
 
-console.log(Object.prototype.toString.call(values)); //[object Magic]
+    Person.prototype.getName = function () {
+        return privateData.get(this).name;
+    };
+
+    return Person;
+})();
