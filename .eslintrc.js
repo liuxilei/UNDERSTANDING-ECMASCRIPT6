@@ -22,5 +22,6 @@ module.exports = {
         'no-compare-neg-zero': 1,
         'use-isnan': 1,
         'no-sparse-arrays': 1,
+        'no-unreachable': 1,
     },
 };
