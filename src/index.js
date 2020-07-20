@@ -1,29 +1,21 @@
-function run(taskDef) {
-    //创建一个无使用限制的迭代器
-    let task = taskDef();
-
-    //开始执行任务
-    let result = task.next();
-
-    //循环调用`next()`函数
-    function step() {
-        //如果任务未完成，则继续执行
-        if (typeof result.value === 'function') {
-            result.value(function (err, data) {
-                if (err) {
-                    result = task.throw(err);
-                    return;
-                }
-
-                result = task.next(data);
-                step();
-            });
-        } else {
-            result = task.next(result.value);
-            step();
+//抽象基类
+class Shape {
+    constructor() {
+        if (new.target === Shape) {
+            throw new Error('这个类不能被直接实例化。');
         }
     }
-
-    //开始迭代执行
-    step();
 }
+
+class Rectangle extends Shape {
+    constructor(length, width) {
+        super();
+        this.length = length;
+        this.width = width;
+    }
+}
+
+var x = new Shape(); //抛出错误
+
+var y = new Rectangle(3, 4); //没有错误
+console.log(y instanceof Shape); //true
