@@ -1,21 +1,8 @@
-//抽象基类
-class Shape {
-    constructor() {
-        if (new.target === Shape) {
-            throw new Error('这个类不能被直接实例化。');
-        }
-    }
-}
+let numbers = [1, 2, 3, 4];
 
-class Rectangle extends Shape {
-    constructor(length, width) {
-        super();
-        this.length = length;
-        this.width = width;
-    }
-}
+//从数组的索引2开始粘贴值
+//从数组的索引0开始复制值
+//当位于索引1时停止复制值
+numbers.copyWithin(2, 0, 1);
 
-var x = new Shape(); //抛出错误
-
-var y = new Rectangle(3, 4); //没有错误
-console.log(y instanceof Shape); //true
+console.log(numbers.toString()); //1,2,1,4
