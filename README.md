@@ -10,3 +10,4 @@
 -   [迭代器(Iterator)和生成器(Generator)](./src/08-Iterators-And-Generators.md)
 -   [JavaScript 中的类](./src/09-Classes.md)
 -   [改进的数组功能](./src/10-Arrays.md)
+-   [Promise 与异步编程](./src/11-Promises.md)
