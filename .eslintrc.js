@@ -23,5 +23,6 @@ module.exports = {
         'use-isnan': 1,
         'no-sparse-arrays': 1,
         'no-unreachable': 1,
+        'no-undef': 1,
     },
 };

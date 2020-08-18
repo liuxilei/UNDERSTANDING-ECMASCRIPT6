@@ -6,9 +6,9 @@
   "private": true,
   "scripts": {
     "start": "npm run dev",
-    "dev": "webpack-dev-server --config ./build/webpack.dev.js",
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js --color --progress",
     "prettier": "prettier --write ./src",
-    "build": "webpack --config ./build/webpack.prod.js",
+    "build": "webpack --config ./build/webpack.prod.js --color --progress",
     "commit": "git-cz"
   },
   "repository": {

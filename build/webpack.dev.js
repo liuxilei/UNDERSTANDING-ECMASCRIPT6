@@ -1,16 +1,17 @@
-const merge = require("webpack-merge");
-const commonConfig = require("./webpack.common.js");
+const merge = require('webpack-merge');
+const commonConfig = require('./webpack.common.js');
 
 const devConfig = {
-    mode: "development",
-    devtool: "source-map",
+    mode: 'development',
+    devtool: 'source-map',
     output: {
-        filename: "[name].js",
+        filename: '[name].js',
     },
     devServer: {
         overlay: true, //将报错信息提示到页面上
-        contentBase: "./dist",
+        contentBase: './dist',
         open: true,
+        host: '0.0.0.0',
         port: 3000,
         hot: true,
     },

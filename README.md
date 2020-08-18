@@ -11,3 +11,4 @@
 -   [JavaScript 中的类](./src/09-Classes.md)
 -   [改进的数组功能](./src/10-Arrays.md)
 -   [Promise 与异步编程](./src/11-Promises.md)
+-   [代理(Proxy)和反射(Reflection)API](./src/12-Proxies-and-Reflection.md)
