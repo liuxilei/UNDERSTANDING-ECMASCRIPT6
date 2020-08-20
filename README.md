@@ -12,3 +12,4 @@
 -   [改进的数组功能](./src/10-Arrays.md)
 -   [Promise 与异步编程](./src/11-Promises.md)
 -   [代理(Proxy)和反射(Reflection)API](./src/12-Proxies-and-Reflection.md)
+-   [用模块封装代码](./src/13-Modules.md)
