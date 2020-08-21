@@ -13,3 +13,4 @@
 -   [Promise 与异步编程](./src/11-Promises.md)
 -   [代理(Proxy)和反射(Reflection)API](./src/12-Proxies-and-Reflection.md)
 -   [用模块封装代码](./src/13-Modules.md)
+-   [ECMAScirpt 6 中较小的改动](./src/A-Other-Changes.md)
