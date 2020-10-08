@@ -6,7 +6,7 @@
 -   [扩展对象的功能性](./src/04-Objects.md)
 -   [解构：使数据访问更便捷](./src/05-Destructuring.md)
 -   [Symbol 和 Symbol 属性](./src/06-Symbols.md)
--   [Set 集合与 Map 集合](./src/07-Sets-And-Maps)
+-   [Set 集合与 Map 集合](./src/07-Sets-And-Maps.md)
 -   [迭代器(Iterator)和生成器(Generator)](./src/08-Iterators-And-Generators.md)
 -   [JavaScript 中的类](./src/09-Classes.md)
 -   [改进的数组功能](./src/10-Arrays.md)
